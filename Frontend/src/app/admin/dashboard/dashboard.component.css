@@ -1,0 +1,27 @@
+.dashboard {
+    padding: 20px;
+}
+
+.first-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5px 30px 5px;
+}
+
+.cars-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 2.5vw;
+    /* justify-items: center; */
+}
+
+
+@media(max-width:1024px){
+    .cars-grid{
+        grid-template-columns: repeat(2,1fr);
+        padding: 2vw;
+        gap: 4vw;
+    } 
+}
